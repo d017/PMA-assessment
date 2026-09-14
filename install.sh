@@ -1,9 +1,9 @@
 #!/bin/bash
 
-mkdir ../data/
+mkdir src/data/
 
-curl -L -o ../data/weather.zip\
+curl -L -o src/data/weather.zip\
   https://www.kaggle.com/api/v1/datasets/download/nelgiriyewithana/global-weather-repository
 
-unzip ../data/weather.zip -d ../data/
+unzip src/data/weather.zip -d src/data/
 echo "Downloaded to src/data/"
